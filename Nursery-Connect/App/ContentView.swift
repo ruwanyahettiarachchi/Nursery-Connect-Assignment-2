@@ -10,6 +10,7 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    @Environment(\.modelContext) private var modelContext
 
     var body: some View {
         Group {
@@ -20,6 +21,9 @@ struct ContentView: View {
             }
         }
         .tint(NurseryTheme.accent)
+        .task {
+            WatchSummarySync.publish(from: modelContext)
+        }
     }
 }
 

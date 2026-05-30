@@ -1,0 +1,104 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/ChildListView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "No children yet",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "Children you support will appear here.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "Keyworker dashboard",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld years old",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "Welcome back",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Keyworker dashboard",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 136
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld years old",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "No children yet",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 182
+        }
+      },
+      {
+        "comment": "",
+        "key": "Children you support will appear here for diary logs and incident reporting.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 184
+        }
+      },
+      {
+        "comment": "",
+        "key": "Little Stars Nursery",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 195
+        }
+      },
+      {
+        "comment": "",
+        "key": "Little Stars Nursery",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 203
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select a child",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 203
+        }
+      }
+    ]
+  },
+  "version": 1
+}

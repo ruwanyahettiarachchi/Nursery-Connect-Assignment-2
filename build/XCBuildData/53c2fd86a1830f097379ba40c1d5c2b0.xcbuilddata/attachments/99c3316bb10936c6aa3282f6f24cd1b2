@@ -1,0 +1,36 @@
+{
+  "" : {
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatch-primary.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatch-primary.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatch-primary.dia",
+    "emit-module-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatch-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatch-primary-emit-module.dia",
+    "pch" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatch-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatch-primary.swiftdeps"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/NurseryConnectWatch/ContentView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/NurseryConnectWatch/Models/WatchTodaySummary.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/WatchTodaySummary.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/WatchTodaySummary.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/WatchTodaySummary.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/NurseryConnectWatch/NurseryConnectWatchApp.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatchApp.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatchApp.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/NurseryConnectWatchApp.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/NurseryConnectWatch/Theme/WatchTheme.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/WatchTheme.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/WatchTheme.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/WatchTheme.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-watchos/NurseryConnectWatch.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

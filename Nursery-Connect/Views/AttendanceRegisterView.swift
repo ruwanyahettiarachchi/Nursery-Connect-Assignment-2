@@ -221,12 +221,14 @@ struct AttendanceRegisterView: View {
             modelContext.insert(record)
         }
         try? modelContext.save()
+        WatchSummarySync.publish(from: modelContext)
     }
 
     private func signOut(_ child: Child) {
         guard let existing = viewModel.record(for: child) else { return }
         existing.signOutTime = Date()
         try? modelContext.save()
+        WatchSummarySync.publish(from: modelContext)
     }
 
     private func isSignInDisabled(_ status: AttendanceStatus) -> Bool {
@@ -256,6 +258,7 @@ struct AttendanceRegisterView: View {
             modelContext.insert(record)
         }
         try? modelContext.save()
+        WatchSummarySync.publish(from: modelContext)
     }
 }
 

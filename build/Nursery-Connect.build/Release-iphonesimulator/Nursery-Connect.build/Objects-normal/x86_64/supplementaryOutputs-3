@@ -1,0 +1,12 @@
+{
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/App/ContentView.swift" : {
+    "abi-baseline-json" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery_Connect.abi.json",
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary.dia",
+    "objc-header" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery_Connect-Swift.h",
+    "swiftdoc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery_Connect.swiftdoc",
+    "swiftmodule" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery_Connect.swiftmodule",
+    "swiftsourceinfo" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery_Connect.swiftsourceinfo"
+  }
+}

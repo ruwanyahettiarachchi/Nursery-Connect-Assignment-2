@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6A1W00102F93000100WC002"
+               BuildableName = "NurseryConnectWatch.app"
+               BlueprintName = "NurseryConnectWatch"
+               ReferencedContainer = "container:Nursery-Connect.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "3A9A686D2F7429C5005E145A"
                BuildableName = "Nursery-Connect.app"
                BlueprintName = "Nursery-Connect"

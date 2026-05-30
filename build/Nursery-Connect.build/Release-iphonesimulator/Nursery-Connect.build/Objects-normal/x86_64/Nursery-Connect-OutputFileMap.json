@@ -1,0 +1,116 @@
+{
+  "" : {
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary.dia",
+    "emit-module-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary-emit-module.dia",
+    "pch" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery-Connect-primary.swiftdeps"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/App/ContentView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/ContentView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/App/Nursery_ConnectApp.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery_ConnectApp.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery_ConnectApp.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Nursery_ConnectApp.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Models/AttendanceRecord.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceRecord.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceRecord.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceRecord.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Models/Child.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Child.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Child.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Child.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Models/DiaryLog.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/DiaryLog.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/DiaryLog.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/DiaryLog.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Models/Incident.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Incident.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Incident.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Incident.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Services/WatchSummarySync.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/WatchSummarySync.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/WatchSummarySync.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/WatchSummarySync.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Services/WatchTodaySummary.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/WatchTodaySummary.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/WatchTodaySummary.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/WatchTodaySummary.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Theme/Haptics.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Haptics.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Haptics.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/Haptics.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Theme/NurseryTheme.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/NurseryTheme.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/NurseryTheme.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/NurseryTheme.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/ViewModels/AnalyticsViewModel.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsViewModel.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsViewModel.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsViewModel.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/ViewModels/AttendanceRegisterViewModel.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceRegisterViewModel.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceRegisterViewModel.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceRegisterViewModel.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AddDiaryView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddDiaryView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddDiaryView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddDiaryView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AddIncidentView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddIncidentView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddIncidentView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddIncidentView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AnalyticsView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AttendanceRegisterView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceRegisterView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceRegisterView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceRegisterView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/ChildDetailView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/ChildDetailView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/ChildDetailView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/ChildDetailView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/ChildListView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/ChildListView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/ChildListView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/ChildListView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/DashboardView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/DashboardView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/DashboardView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/DashboardView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/iPadRootView.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/iPadRootView.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/iPadRootView.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/iPadRootView.o"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/Nursery-Connect.build/Release-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/GeneratedAssetSymbols.o"
+  }
+}

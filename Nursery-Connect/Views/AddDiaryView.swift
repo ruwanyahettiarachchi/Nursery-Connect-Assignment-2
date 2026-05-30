@@ -203,6 +203,7 @@ struct AddDiaryView: View {
 
         do {
             try modelContext.save()
+            WatchSummarySync.publish(from: modelContext)
             Haptics.diarySaved()
             dismiss()
         } catch {

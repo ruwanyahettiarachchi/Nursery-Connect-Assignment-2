@@ -133,6 +133,7 @@ struct AddIncidentView: View {
 
         do {
             try modelContext.save()
+            WatchSummarySync.publish(from: modelContext)
             Haptics.incidentSubmitted()
             dismiss()
         } catch {

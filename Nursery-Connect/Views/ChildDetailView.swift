@@ -108,6 +108,7 @@ struct ChildDetailView: View {
                 if let log = diaryLogPendingDelete {
                     modelContext.delete(log)
                     try? modelContext.save()
+                    WatchSummarySync.publish(from: modelContext)
                 }
                 diaryLogPendingDelete = nil
             }
@@ -122,6 +123,7 @@ struct ChildDetailView: View {
                 if let incident = incidentPendingDelete {
                     modelContext.delete(incident)
                     try? modelContext.save()
+                    WatchSummarySync.publish(from: modelContext)
                 }
                 incidentPendingDelete = nil
             }
