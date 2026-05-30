@@ -9,13 +9,26 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
     var body: some View {
-        DashboardView()
-            .tint(NurseryTheme.accent)
+        Group {
+            if horizontalSizeClass == .regular {
+                iPadRootView()
+            } else {
+                DashboardView()
+            }
+        }
+        .tint(NurseryTheme.accent)
     }
 }
 
-#Preview {
+#Preview("iPhone") {
     ContentView()
-        .modelContainer(for: [Child.self, DiaryLog.self, Incident.self], inMemory: true)
+        .modelContainer(for: [Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self], inMemory: true)
+}
+
+#Preview("iPad") {
+    ContentView()
+        .modelContainer(for: [Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self], inMemory: true)
 }

@@ -5,7 +5,7 @@ import SwiftData
 final class NurseryConnectModelTests: XCTestCase {
 
     private func makeInMemoryContainer() throws -> ModelContainer {
-        let schema = Schema([Child.self, DiaryLog.self, Incident.self])
+        let schema = Schema([Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self])
         let configuration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
         return try ModelContainer(for: schema, configurations: [configuration])
     }

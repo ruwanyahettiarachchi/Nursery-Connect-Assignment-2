@@ -5,6 +5,7 @@ struct ChildDetailView: View {
     let child: Child
 
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Query private var diaryLogs: [DiaryLog]
     @Query private var incidents: [Incident]
 
@@ -65,7 +66,7 @@ struct ChildDetailView: View {
 
                 incidentSectionCard
             }
-            .padding(.horizontal, 18)
+            .padding(.horizontal, NurseryTheme.horizontalPadding(for: horizontalSizeClass))
             .padding(.vertical, 16)
             .padding(.bottom, 8)
             .opacity(didAnimateListIn ? 1.0 : 0.0)
@@ -208,6 +209,7 @@ struct ChildDetailView: View {
             }
             .buttonStyle(NurseryTapAnimationStyle())
             .contentShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .keyboardShortcut("n", modifiers: .command)
         }
         .nurseryCard()
     }
@@ -256,6 +258,7 @@ struct ChildDetailView: View {
             .buttonStyle(NurseryTapAnimationStyle())
             .contentShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
             .accessibilityIdentifier("detail.addIncident")
+            .keyboardShortcut("i", modifiers: .command)
         }
         .nurseryCard()
     }
@@ -457,5 +460,5 @@ struct ChildDetailView: View {
     NavigationStack {
         ChildDetailView(child: Child(name: "Ava", age: 3))
     }
-    .modelContainer(for: [Child.self, DiaryLog.self, Incident.self], inMemory: true)
+    .modelContainer(for: [Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self], inMemory: true)
 }

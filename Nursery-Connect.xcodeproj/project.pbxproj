@@ -31,8 +31,8 @@
 /* Begin PBXFileReference section */
 		3A9A686E2F7429C5005E145A /* Nursery-Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nursery-Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7E10022F80000100A1B2C3 /* Nursery-ConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nursery-ConnectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C2B001B2F92C00100AA001 /* Nursery-ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nursery-ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7E10032F80000100A1B2C3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
+		5C2B001B2F92C00100AA001 /* Nursery-ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nursery-ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */

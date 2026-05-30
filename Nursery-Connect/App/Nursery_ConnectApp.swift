@@ -17,13 +17,14 @@ import Foundation
 @main
 struct Nursery_ConnectApp: App {
     /// Bump this when the persisted schema changes in a way that is not auto-migrated from older stores.
-    private static let storeSchemaVersion = 2
+    private static let storeSchemaVersion = 3
 
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Child.self,
             DiaryLog.self,
             Incident.self,
+            AttendanceRecord.self,
         ])
 
         let supportDir = URL.applicationSupportDirectory

@@ -1,6 +1,10 @@
 import SwiftUI
 
 enum NurseryTheme {
+    static func horizontalPadding(for horizontalSizeClass: UserInterfaceSizeClass?) -> CGFloat {
+        horizontalSizeClass == .regular ? 32 : 18
+    }
+
     /// Bright, friendly teal — primary actions & tint
     static let accent = Color(red: 0.12, green: 0.62, blue: 0.68)
     /// Lively mint — highlights & success
