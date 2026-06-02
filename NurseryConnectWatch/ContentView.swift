@@ -20,6 +20,30 @@ struct ContentView: View {
                         if !summary.recentIncidents.isEmpty {
                             recentIncidentsSection(summary.recentIncidents)
                         }
+                        
+                        Divider().padding(.vertical, 4)
+                        
+                        // Viva Demo Section
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("Viva Demo Helpers")
+                                .font(.caption2.weight(.bold))
+                                .foregroundStyle(.secondary)
+                            
+                            HStack(spacing: 8) {
+                                Button("Check In") {
+                                    simulateLocalAlert(kind: "signIn", childName: "Mia Johnson")
+                                }
+                                .font(.system(size: 10))
+                                .tint(WatchTheme.mint)
+                                
+                                Button("Check Out") {
+                                    simulateLocalAlert(kind: "signOut", childName: "Mia Johnson")
+                                }
+                                .font(.system(size: 10))
+                                .tint(WatchTheme.diaryTint)
+                            }
+                        }
+                        .padding(.horizontal, 4)
                     } else {
                         emptyState
                     }
@@ -177,6 +201,38 @@ struct ContentView: View {
             lastSeenAttendanceAlertTime = alertTime
             WKInterfaceDevice.current().play(.notification)
         }
+    }
+
+    private func simulateLocalAlert(kind: String, childName: String) {
+        let alert = WatchAttendanceAlert(
+            message: "\(childName) \(kind == "signIn" ? "signed in" : "signed out")",
+            date: Date(),
+            kind: kind
+        )
+        
+        var currentSummary = summary ?? WatchTodaySummary(
+            updatedAt: Date(),
+            childrenCount: 4,
+            studentsInNurseryToday: 3,
+            diaryEntriesToday: 2,
+            incidentsToday: 1,
+            recentIncidents: [
+                WatchRecentIncident(id: UUID(), childName: "Emma Brown", bodyPart: "Head", date: Date().addingTimeInterval(-3600)),
+                WatchRecentIncident(id: UUID(), childName: "Noah Williams", bodyPart: "Leg", date: Date().addingTimeInterval(-7200))
+            ],
+            attendanceAlert: nil
+        )
+        
+        currentSummary.attendanceAlert = alert
+        if kind == "signIn" {
+            currentSummary.studentsInNurseryToday += 1
+        } else {
+            currentSummary.studentsInNurseryToday = max(0, currentSummary.studentsInNurseryToday - 1)
+        }
+        
+        summary = currentSummary
+        showAttendanceBanner = true
+        WKInterfaceDevice.current().play(.notification)
     }
 }
 

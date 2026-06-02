@@ -14,8 +14,25 @@ class WatchSessionManager: NSObject, WCSessionDelegate, ObservableObject {
             session.delegate = self
             session.activate()
         }
-        // Load initial offline cached summary if available
-        self.summary = WatchSummaryStore.load()
+        // Load initial offline cached summary or seed a mock summary for immediate viva display
+        if let loaded = WatchSummaryStore.load() {
+            self.summary = loaded
+        } else {
+            let mock = WatchTodaySummary(
+                updatedAt: Date(),
+                childrenCount: 4,
+                studentsInNurseryToday: 3,
+                diaryEntriesToday: 5,
+                incidentsToday: 1,
+                recentIncidents: [
+                    WatchRecentIncident(id: UUID(), childName: "Emma Brown", bodyPart: "Head", date: Date().addingTimeInterval(-3600 * 3)),
+                    WatchRecentIncident(id: UUID(), childName: "Noah Williams", bodyPart: "Leg", date: Date().addingTimeInterval(-3600 * 1))
+                ],
+                attendanceAlert: WatchAttendanceAlert(message: "Emma Brown signed in", date: Date(), kind: "signIn")
+            )
+            self.summary = mock
+            WatchSummaryStore.save(mock)
+        }
     }
     
     func activate() {
