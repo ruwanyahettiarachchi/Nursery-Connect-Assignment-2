@@ -6,9 +6,26 @@ struct AttendanceRegisterView: View {
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Query(sort: \Child.name) private var children: [Child]
     @Query(sort: \AttendanceRecord.date, order: .reverse) private var attendanceRecords: [AttendanceRecord]
+    @Query(sort: \AuthorisedCollector.createdAt, order: .reverse) private var authorisedCollectors: [AuthorisedCollector]
+
+    @State private var sheetRoute: SheetRoute?
+    @State private var showUnknownCollectorAlert = false
+    @State private var unknownCollectorMessage = ""
 
     private var viewModel: AttendanceRegisterViewModel {
         AttendanceRegisterViewModel(children: children, records: attendanceRecords)
+    }
+
+    private enum SheetRoute: Identifiable {
+        case checkIn(Child)
+        case checkOut(Child)
+
+        var id: String {
+            switch self {
+            case .checkIn(let c): return "checkIn-\(c.name)"
+            case .checkOut(let c): return "checkOut-\(c.name)"
+            }
+        }
     }
 
     var body: some View {
@@ -33,6 +50,56 @@ struct AttendanceRegisterView: View {
         .background(NurseryTheme.pageBackground.ignoresSafeArea(edges: [.horizontal, .bottom]))
         .navigationTitle("Attendance Register")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(item: $sheetRoute) { route in
+            switch route {
+            case .checkIn(let child):
+                NavigationStack {
+                    AttendanceCheckInSheet(
+                        child: child,
+                        existingRecord: viewModel.record(for: child),
+                        onSave: { droppedOffByName, droppedOffByRelationship, staffName, notes in
+                            saveCheckIn(
+                                child: child,
+                                droppedOffByName: droppedOffByName,
+                                droppedOffByRelationship: droppedOffByRelationship,
+                                staffName: staffName,
+                                notes: notes
+                            )
+                        }
+                    )
+                    .tint(NurseryTheme.accent)
+                }
+            case .checkOut(let child):
+                NavigationStack {
+                    AttendanceCheckOutSheet(
+                        child: child,
+                        existingRecord: viewModel.record(for: child),
+                        authorisedCollectors: authorisedCollectors.filter { $0.childName == child.name },
+                        onSave: { collectorName, collectorRelationship, isAuthorised, staffName, notes in
+                            if !isAuthorised {
+                                unknownCollectorMessage = "Collector “\(collectorName)” is not in the authorised list for \(child.name). Please verify photo ID and follow nursery policy."
+                                showUnknownCollectorAlert = true
+                            }
+
+                            saveCheckOut(
+                                child: child,
+                                collectorName: collectorName,
+                                collectorRelationship: collectorRelationship,
+                                isAuthorised: isAuthorised,
+                                staffName: staffName,
+                                notes: notes
+                            )
+                        }
+                    )
+                    .tint(NurseryTheme.accent)
+                }
+            }
+        }
+        .alert("Unknown collector", isPresented: $showUnknownCollectorAlert) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(unknownCollectorMessage)
+        }
     }
 
     private var headerCard: some View {
@@ -105,7 +172,7 @@ struct AttendanceRegisterView: View {
                     tint: NurseryTheme.mint,
                     disabled: isSignInDisabled(status)
                 ) {
-                    signIn(child)
+                    sheetRoute = .checkIn(child)
                 }
 
                 attendanceButton(
@@ -114,7 +181,7 @@ struct AttendanceRegisterView: View {
                     tint: NurseryTheme.diaryTint,
                     disabled: !canSignOut(status)
                 ) {
-                    signOut(child)
+                    sheetRoute = .checkOut(child)
                 }
 
                 attendanceButton(
@@ -260,11 +327,69 @@ struct AttendanceRegisterView: View {
         try? modelContext.save()
         WatchSummarySync.publish(from: modelContext)
     }
+
+    private func saveCheckIn(
+        child: Child,
+        droppedOffByName: String,
+        droppedOffByRelationship: String,
+        staffName: String,
+        notes: String
+    ) {
+        let today = AttendanceRegisterViewModel.startOfDay(for: Date())
+
+        if let existing = viewModel.record(for: child) {
+            existing.isAbsent = false
+            existing.signInTime = Date()
+            existing.signOutTime = nil
+            existing.droppedOffByName = droppedOffByName
+            existing.droppedOffByRelationship = droppedOffByRelationship
+            existing.checkedInByStaffName = staffName
+            existing.notes = notes
+        } else {
+            let record = AttendanceRecord(
+                childName: child.name,
+                date: today,
+                signInTime: Date(),
+                isAbsent: false,
+                droppedOffByName: droppedOffByName,
+                droppedOffByRelationship: droppedOffByRelationship,
+                checkedInByStaffName: staffName,
+                notes: notes
+            )
+            modelContext.insert(record)
+        }
+
+        try? modelContext.save()
+        WatchSummarySync.publish(from: modelContext)
+        sheetRoute = nil
+    }
+
+    private func saveCheckOut(
+        child: Child,
+        collectorName: String,
+        collectorRelationship: String,
+        isAuthorised: Bool,
+        staffName: String,
+        notes: String
+    ) {
+        guard let existing = viewModel.record(for: child) else { return }
+
+        existing.signOutTime = Date()
+        existing.collectedByName = collectorName
+        existing.collectedByRelationship = collectorRelationship
+        existing.collectorWasAuthorised = isAuthorised
+        existing.checkedOutByStaffName = staffName
+        existing.notes = notes
+
+        try? modelContext.save()
+        WatchSummarySync.publish(from: modelContext)
+        sheetRoute = nil
+    }
 }
 
 #Preview {
     NavigationStack {
         AttendanceRegisterView()
     }
-    .modelContainer(for: [Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self], inMemory: true)
+    .modelContainer(for: [Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self, AuthorisedCollector.self, MoodCheckIn.self], inMemory: true)
 }
