@@ -1,0 +1,184 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AttendanceCheckInSheet.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Check in",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "Arrival",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dropped off by",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Checked in by staff",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notes",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "Arrival time will be recorded automatically.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "No authorised collectors on file yet. Enter visitor details below.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "Relationship",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save to authorised collectors",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select person",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 92
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "Relationship",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "Relationship",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save to authorised collectors",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "Other visitor (new)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ (%@)",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "Staff name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "Optional notes",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 128
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 131
+        }
+      }
+    ]
+  },
+  "version": 1
+}

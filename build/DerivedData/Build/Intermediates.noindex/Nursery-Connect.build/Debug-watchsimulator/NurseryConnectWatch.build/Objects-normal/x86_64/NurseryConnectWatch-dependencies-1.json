@@ -1,0 +1,580 @@
+[
+  {
+    "isFramework" : true,
+    "moduleName" : "Accessibility",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/Accessibility.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Combine",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/Combine.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreData",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/CoreData.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/CoreFoundation.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreGraphics",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/CoreGraphics.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreLocation",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/CoreLocation.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreText",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/CoreText.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreTransferable",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/CoreTransferable.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreVideo",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/CoreVideo.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Darwin",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/Darwin.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DataDetection",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/DataDetection.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DeveloperToolsSupport",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/DeveloperToolsSupport.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Dispatch",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/Dispatch.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Foundation",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/Foundation.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "GeoToolbox",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/GeoToolbox.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "HomeKit",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/HomeKit.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "MapKit",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/MapKit.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "OSLog",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/OSLog.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/ObjectiveC.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Observation",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/Observation.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "SceneKit",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/SceneKit.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Spatial",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/Spatial.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Swift",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/Swift.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "SwiftOnoneSupport",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/SwiftOnoneSupport.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUI",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/SwiftUI.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUICore",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/SwiftUICore.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Symbols",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/Symbols.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "System",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/System.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "UIKit",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/UIKit.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/UniformTypeIdentifiers.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "WatchKit",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/WatchKit.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/_Builtin_float.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Concurrency",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/_Concurrency.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/_DarwinFoundation1.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/_DarwinFoundation2.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/_DarwinFoundation3.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_StringProcessing",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/_StringProcessing.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "_WatchKit_SwiftUI",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/_WatchKit_SwiftUI.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "os",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/os.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "simd",
+    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/watchsimulator\/prebuilt-modules\/26.2\/simd.swiftmodule\/x86_64-apple-watchos-simulator.swiftmodule"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/Accessibility-1NKSAW42KGZTJZBPFYL3OPJ4H.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Accessibility"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/CoreData-C48GPHLIAZ94WXB8SMVZUK37R.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreData"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/CoreFoundation-9S98OZSN8N3NGF7A89SVU2Q5E.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/CoreGraphics-6OSE8AXMKKP3V9DBULHFHVL8K.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreGraphics"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreLocation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/CoreLocation-69RX4D7BR9W2EP8XPPF35MN9V.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreLocation"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/CoreText-CIL3071WZEEWTNP3A3B69NWF3.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreText"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/CoreTransferable-9IY3D867S7Q7FCFQSAV7RN79D.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreTransferable"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/CoreVideo-39D7HCL8PYYMP9SBK3WWFYD1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreVideo"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/Darwin.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/Darwin-BZLBRP0CAHDYVYTVY5PNSQQ7P.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Darwin"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/DataDetection-EJR4UEX4J3Y3W4I0BNG1EVNZZ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DataDetection"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/DeveloperToolsSupport-BSGMFOUREC0G2EF5QP8H4GJLP.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DeveloperToolsSupport"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/dispatch.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/Dispatch-867PB0U15YB7JMFOVB69AW7HR.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Dispatch"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/Foundation-DW3M7TJK6PU13DIYMG7L5WUAI.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Foundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/HomeKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/HomeKit-5PPTNQHD6S1XDZ2WO7FEF72XO.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "HomeKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinBasic.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/MachO-BSCJ6TTLZXISJPW0V62EFC9IW.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "MachO"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/MapKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/MapKit-252JD5QC8PZKAMW086NYYBZ1A.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "MapKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/OSLog-3BPFLQLZ6Q6AV4L9KDRDE8A35.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "OSLog"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/ObjectiveC.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/ObjectiveC-1XRTD2RQIEHRRCCX7VZWK28DP.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/QuartzCore-1UKWR8O86JMRK6RSALOPV0NEJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "QuartzCore"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/SceneKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/SceneKit-3W0M9PUFORQ0PQZNR8NE2SXKW.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SceneKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/Security-32VJB5UJ43VGBYZ573SY1OD4F.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Security"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/Spatial\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/Spatial-ZA26CNPNT4V7DZQ53O3RBCOP.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Spatial"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/SwiftShims-9J5C0LBMF4BI0X6AHI3OPCXHH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/SwiftUI-106XZEW5HYNKUPV5BEYA18Z1K.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUI"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/SwiftUICore-8PN0V1I3QL5493LAMX0PGVZYQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUICore"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/Symbols-8ZIGZ22WZPV143QEXWK9J14DY.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Symbols"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/UIKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/UIKit-2XBXBHZ7OY0XPQ1R3O7I7XUCU.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UIKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/SubFrameworks\/UIUtilities.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/UIUtilities-7S7J45IJ7LK230O7NBUIDI4ZS.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UIUtilities"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/UniformTypeIdentifiers-DTAL650VWJBXVZ8X6686292QH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/UserNotifications.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/UserNotifications-3UDV273A0YBOY7ME6ATVXGIA6.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UserNotifications"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/WatchKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/WatchKit-E8RXJG2PKW8XD7SRWPP9IP1KC.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "WatchKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_AvailabilityInternal-8ZPZ8B410SO3AR48TYVFLVHU7.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_AvailabilityInternal"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_float-7J3QSL7YLTIWZ0T8KVZDRF49A.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_intrinsics-51Z4HGNNYR0HAJ7XTYUK1LSSA.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_intrinsics"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_inttypes-2B6IT0OQXJRZ1HJ3OVFUW36G8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_inttypes"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_limits-9Y9J04ZMGQFOP6PRXFQSMEZ4T.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_limits"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_stdarg-BOC69T2NOCMIQ6TZH7VICUMJ3.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdarg"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_stdatomic-2W1SD8GQ4GF87JPTVJ4CE6QVM.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdatomic"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_stdbool-D4V3N5NG25EXF20WGRFNY3B6W.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdbool"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_stddef-2XSCG5W9FJ8RZL8IMULUBKIJK.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stddef"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_stdint-1DRJMIJPM1LEI3W7W1OJYX296.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdint"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_Builtin_tgmath-BM39H23ADHNEPY79TT108DQ7N.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_tgmath"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_DarwinFoundation1-FQBWPTRSSGAARB0E802NC2SV.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_DarwinFoundation2-89QVDSO5QOY9JKOKWCQJHVHI4.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation3.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_DarwinFoundation3-26Y7BT6EDBTKTJL2L1AZ0LMEK.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/_LocationEssentials.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_LocationEssentials-8CKUNOBHON6Q2EBQ7CFGEQ2QL.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_LocationEssentials"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/_SwiftConcurrencyShims-OC7CF98PRDWD7MITTCYZREY0.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_SwiftConcurrencyShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/os-5X0L8SRZED7HYUL3QAPUKEWS7.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/os_object-OCPOBZ9Y9A1BKRO7C1DG4DCJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_object"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/os_workgroup-464NBGWSPVGDV8WIZGGHSTB38.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_workgroup"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/ptrauth-ABCA7C6QEW1U99H3BJ200NULZ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrauth"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/17\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/ptrcheck-BO4E59BQC6STEX2SVJGMYH8HL.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrcheck"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/simd\/module.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/simd-5Y9XYGWBSSII09UHD9PUO1QIW.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "simd"
+  },
+  {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/shehansalitha\/Desktop\/Ruwanya Xcode\/Nursery-Connect-Assignment-2\/build\/DerivedData\/ModuleCache.noindex\/sys_types-9Q05XRIZE9MF07FLO5X0QX0T1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "sys_types"
+  }
+]

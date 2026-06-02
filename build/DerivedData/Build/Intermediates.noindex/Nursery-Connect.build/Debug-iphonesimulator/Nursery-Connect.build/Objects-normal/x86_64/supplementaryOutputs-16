@@ -1,0 +1,23 @@
+{
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/MoodCheckInsView.swift" : {
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/MoodCheckInsView.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/MoodCheckInsView.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/MoodCheckInsView.dia",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/MoodCheckInsView.o",
+    "swift-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/MoodCheckInsView.swiftdeps"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/iPadRootView.swift" : {
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/iPadRootView.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/iPadRootView.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/iPadRootView.dia",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/iPadRootView.o",
+    "swift-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/iPadRootView.swiftdeps"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps"
+  }
+}

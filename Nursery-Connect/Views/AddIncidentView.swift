@@ -16,7 +16,8 @@ struct AddIncidentView: View {
     @State private var bodyMapSide: String
     @State private var bodyMapRegion: String
     @State private var immediateActionTaken: String
-    @State private var witnesses: [IncidentWitness]
+    @State private var includeWitnesses: Bool
+    @State private var selectedStaffWitnesses: Set<String>
     @State private var alertMessage: String = ""
     @State private var showAlert: Bool = false
 
@@ -34,7 +35,9 @@ struct AddIncidentView: View {
             _bodyMapSide = State(initialValue: incident.bodyMapSide)
             _bodyMapRegion = State(initialValue: incident.bodyMapRegion)
             _immediateActionTaken = State(initialValue: incident.immediateActionTaken)
-            _witnesses = State(initialValue: incident.witnesses)
+            let names = Set(incident.witnesses.map(\.name))
+            _selectedStaffWitnesses = State(initialValue: names)
+            _includeWitnesses = State(initialValue: !names.isEmpty)
         } else {
             _date = State(initialValue: Date())
             _category = State(initialValue: IncidentCategory.accidentMinor)
@@ -44,11 +47,19 @@ struct AddIncidentView: View {
             _bodyMapSide = State(initialValue: BodyMapSide.front)
             _bodyMapRegion = State(initialValue: "")
             _immediateActionTaken = State(initialValue: "")
-            _witnesses = State(initialValue: [])
+            _selectedStaffWitnesses = State(initialValue: [])
+            _includeWitnesses = State(initialValue: false)
         }
     }
 
     private var isEditing: Bool { incidentToEdit != nil }
+
+    private var witnessPickerSummary: String {
+        if selectedStaffWitnesses.isEmpty {
+            return "Select staff"
+        }
+        return selectedStaffWitnesses.sorted().joined(separator: ", ")
+    }
 
     private var latestSelectableDate: Date { Date() }
 
@@ -116,22 +127,21 @@ struct AddIncidentView: View {
             }
 
             Section("Witnesses") {
-                if witnesses.isEmpty {
-                    Text("Add staff or witness names (optional).")
-                        .foregroundStyle(.secondary)
-                }
+                Toggle("Add witnesses", isOn: $includeWitnesses)
+                    .onChange(of: includeWitnesses) { _, isOn in
+                        if !isOn {
+                            selectedStaffWitnesses.removeAll()
+                        }
+                    }
 
-                ForEach($witnesses) { $witness in
-                    TextField("Witness name", text: $witness.name)
-                }
-                .onDelete { offsets in
-                    witnesses.remove(atOffsets: offsets)
-                }
-
-                Button {
-                    witnesses.append(IncidentWitness(name: ""))
-                } label: {
-                    Label("Add witness", systemImage: "plus.circle")
+                if includeWitnesses {
+                    Picker("Staff witnesses", selection: $selectedStaffWitnesses) {
+                        ForEach(NurseryStaff.all, id: \.self) { name in
+                            Text(name).tag(name)
+                        }
+                    }
+                    .pickerStyle(.menu)
+                    .accessibilityLabel("Staff witnesses: \(witnessPickerSummary)")
                 }
             }
         }
@@ -163,9 +173,9 @@ struct AddIncidentView: View {
         let trimmedDescription = descriptionText.trimmingCharacters(in: .whitespacesAndNewlines)
         let trimmedLocation = location.trimmingCharacters(in: .whitespacesAndNewlines)
         let trimmedAction = immediateActionTaken.trimmingCharacters(in: .whitespacesAndNewlines)
-        let cleanedWitnesses = witnesses
-            .map { IncidentWitness(id: $0.id, name: $0.name.trimmingCharacters(in: .whitespacesAndNewlines)) }
-            .filter { !$0.name.isEmpty }
+        let cleanedWitnesses: [IncidentWitness] = includeWitnesses
+            ? selectedStaffWitnesses.sorted().map { IncidentWitness(name: $0) }
+            : []
 
         guard !trimmedDescription.isEmpty else {
             alertMessage = "Please enter an incident description before submitting."

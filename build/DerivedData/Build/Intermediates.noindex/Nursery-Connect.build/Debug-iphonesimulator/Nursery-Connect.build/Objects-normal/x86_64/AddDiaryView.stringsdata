@@ -1,0 +1,328 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AddDiaryView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Edit Diary Entry",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 194
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Diary Entry",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 194
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unable to Save Diary Entry",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 208
+        }
+      },
+      {
+        "comment": "",
+        "key": "Concern noted",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 213
+        }
+      },
+      {
+        "comment": "",
+        "key": "Activity",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mood & Nap",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nappy / Toilet",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "Meals",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Activity",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mood",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add nap",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nap Start",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nap End",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sleep position",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "Happy",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sad",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tired",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unsettled",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Poorly",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 86
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add nappy/toilet log",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "Time",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "Change occurred",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "Observations of concern (optional)",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 145
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add up to 3 meals (optional).",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "Meal",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 164
+        }
+      },
+      {
+        "comment": "",
+        "key": "Time",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notes (optional)",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "Breakfast",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "Lunch",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 166
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dinner",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 167
+        }
+      },
+      {
+        "comment": "",
+        "key": "Snack",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "Meal limit reached",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add meal",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 203
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 209
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "A concern note has been added. In a real nursery workflow, this could trigger an alert/escalation according to policy.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 216
+        }
+      }
+    ]
+  },
+  "version": 1
+}

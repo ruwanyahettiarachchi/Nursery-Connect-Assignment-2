@@ -1,0 +1,24 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/DashboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Little Stars Nursery",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 8
+        }
+      },
+      {
+        "comment": "",
+        "key": "Register",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 14
+        }
+      }
+    ]
+  },
+  "version": 1
+}

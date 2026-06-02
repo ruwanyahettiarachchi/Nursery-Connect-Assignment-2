@@ -1,0 +1,216 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/ChildDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Delete diary entry?",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete incident report?",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "This will permanently remove this diary entry from the device.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 122
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 125
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 128
+        }
+      },
+      {
+        "comment": "",
+        "key": "This will permanently remove this incident from the device.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld years old",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 176
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Diary Entry",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "Record wellbeing at arrival, midday, and departure.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 245
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open mood check-ins",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 252
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Incident",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 291
+        }
+      },
+      {
+        "comment": "",
+        "key": "Parents manage the authorised collectors list. Keyworkers are alerted if a check-out uses an unknown collector.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 323
+        }
+      },
+      {
+        "comment": "",
+        "key": "Manage collectors",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 330
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld meal%@ • %@",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 451
+        }
+      },
+      {
+        "comment": "",
+        "key": "•",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 388
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 403
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 406
+        }
+      },
+      {
+        "comment": "",
+        "key": "(%lld min)",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 432
+        }
+      },
+      {
+        "comment": "",
+        "key": "Change recorded",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 441
+        }
+      },
+      {
+        "comment": "",
+        "key": "No change",
+        "location": {
+          "startingColumn": 64,
+          "startingLine": 441
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ – %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 425
+        }
+      },
+      {
+        "comment": "",
+        "key": "·",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 498
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 509
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 512
+        }
+      }
+    ]
+  },
+  "version": 1
+}

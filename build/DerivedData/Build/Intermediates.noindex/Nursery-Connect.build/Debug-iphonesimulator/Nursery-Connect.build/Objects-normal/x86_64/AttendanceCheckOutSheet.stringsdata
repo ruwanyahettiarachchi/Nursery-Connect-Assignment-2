@@ -1,0 +1,144 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AttendanceCheckOutSheet.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Check out",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "Departure",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Collector",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Checked out by staff",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notes",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "Departure time will be recorded automatically.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "No authorised collectors on file.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unknown collector",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unknown collector",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Relationship",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "Authorised collector",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ (%@)",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "Staff name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Optional notes",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 105
+        }
+      }
+    ]
+  },
+  "version": 1
+}

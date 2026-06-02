@@ -10,6 +10,7 @@ struct ChildListView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Query(sort: \Child.name) private var children: [Child]
+    @Query(sort: \AttendanceRecord.date, order: .reverse) private var attendanceRecords: [AttendanceRecord]
 
     var style: ChildListStyle = .phone
     @Binding var selectedChild: Child?
@@ -85,7 +86,12 @@ struct ChildListView: View {
                     }
                 }
             } header: {
-                Text("Keyworker dashboard")
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Keyworker dashboard")
+                    Text("\(studentsInNurseryToday) in nursery · \(children.count) on roll")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
             }
         }
         .listStyle(.sidebar)
@@ -121,25 +127,82 @@ struct ChildListView: View {
         for child in samples {
             modelContext.insert(child)
         }
+
+        seedSampleAuthorisedCollectors(for: samples)
+
         try? modelContext.save()
+        WatchSummarySync.publish(from: modelContext)
     }
 
-    private var headerBlock: some View {
-        HStack(spacing: 12) {
-            Image(systemName: "sun.max.fill")
-                .font(.title)
+    private func seedSampleAuthorisedCollectors(for children: [Child]) {
+        let samples: [(childIndex: Int, name: String, relationship: String)] = [
+            (0, "Sarah Brown", "Mother"),
+            (0, "James Brown", "Father"),
+            (1, "Helen Smith", "Mother"),
+            (2, "Priya Johnson", "Mother"),
+            (3, "David Williams", "Father"),
+        ]
+
+        for item in samples where item.childIndex < children.count {
+            let child = children[item.childIndex]
+            modelContext.insert(
+                AuthorisedCollector(
+                    childName: child.name,
+                    name: item.name,
+                    relationship: item.relationship
+                )
+            )
+        }
+    }
+
+    private var studentsInNurseryToday: Int {
+        let calendar = Calendar.current
+        return attendanceRecords.filter { record in
+            calendar.isDateInToday(record.date)
+                && !record.isAbsent
+                && record.signInTime != nil
+                && record.signOutTime == nil
+        }.count
+    }
+
+    private var nurseryAvailabilityBanner: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "figure.2.and.child.holdinghands")
+                .font(.title3)
                 .foregroundStyle(NurseryTheme.mint)
-            VStack(alignment: .leading, spacing: 4) {
-                Text("Welcome back")
-                    .font(.subheadline)
+            VStack(alignment: .leading, spacing: 2) {
+                Text("\(studentsInNurseryToday) in nursery now")
+                    .font(.headline)
+                Text("\(children.count) children on roll")
+                    .font(.caption)
                     .foregroundStyle(.secondary)
-                Text("Keyworker dashboard")
-                    .font(.title3.weight(.semibold))
             }
             Spacer(minLength: 0)
         }
-        .padding(16)
+        .padding(14)
         .nurseryCard()
+    }
+
+    private var headerBlock: some View {
+        VStack(spacing: 12) {
+            nurseryAvailabilityBanner
+
+            HStack(spacing: 12) {
+                Image(systemName: "sun.max.fill")
+                    .font(.title)
+                    .foregroundStyle(NurseryTheme.mint)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Welcome back")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                    Text("Keyworker dashboard")
+                        .font(.title3.weight(.semibold))
+                }
+                Spacer(minLength: 0)
+            }
+            .padding(16)
+            .nurseryCard()
+        }
     }
 
     private func childRow(_ child: Child, showsChevron: Bool) -> some View {
@@ -197,7 +260,7 @@ struct ChildListView: View {
         ChildListView(style: .phone)
             .navigationTitle("Little Stars Nursery")
     }
-    .modelContainer(for: [Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self], inMemory: true)
+    .modelContainer(for: [Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self, AuthorisedCollector.self, MoodCheckIn.self], inMemory: true)
 }
 
 #Preview("Sidebar") {
@@ -207,5 +270,5 @@ struct ChildListView: View {
     } detail: {
         Text("Select a child")
     }
-    .modelContainer(for: [Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self], inMemory: true)
+    .modelContainer(for: [Child.self, DiaryLog.self, Incident.self, AttendanceRecord.self, AuthorisedCollector.self, MoodCheckIn.self], inMemory: true)
 }

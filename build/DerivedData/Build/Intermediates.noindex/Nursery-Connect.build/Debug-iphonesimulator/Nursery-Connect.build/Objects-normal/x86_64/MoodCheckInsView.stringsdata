@@ -1,0 +1,120 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/MoodCheckInsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Mood check-ins",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "Today",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recent",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save check-ins",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "No check-ins yet",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Record mood and wellbeing at arrival, midday, and departure.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ • %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mood",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notes (optional)",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "Happy",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unsettled",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "Poorly",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tired",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sad",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 80
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -56,14 +56,16 @@ struct AttendanceRegisterView: View {
                 NavigationStack {
                     AttendanceCheckInSheet(
                         child: child,
+                        authorisedCollectors: authorisedCollectors.filter { $0.childName == child.name },
                         existingRecord: viewModel.record(for: child),
-                        onSave: { droppedOffByName, droppedOffByRelationship, staffName, notes in
+                        onSave: { droppedOffByName, droppedOffByRelationship, staffName, notes, saveToAuthorisedList in
                             saveCheckIn(
                                 child: child,
                                 droppedOffByName: droppedOffByName,
                                 droppedOffByRelationship: droppedOffByRelationship,
                                 staffName: staffName,
-                                notes: notes
+                                notes: notes,
+                                saveToAuthorisedList: saveToAuthorisedList
                             )
                         }
                     )
@@ -288,14 +290,28 @@ struct AttendanceRegisterView: View {
             modelContext.insert(record)
         }
         try? modelContext.save()
-        WatchSummarySync.publish(from: modelContext)
+        WatchSummarySync.publish(
+            from: modelContext,
+            attendanceAlert: WatchAttendanceAlert(
+                message: "\(child.name) signed in",
+                date: Date(),
+                kind: "signIn"
+            )
+        )
     }
 
     private func signOut(_ child: Child) {
         guard let existing = viewModel.record(for: child) else { return }
         existing.signOutTime = Date()
         try? modelContext.save()
-        WatchSummarySync.publish(from: modelContext)
+        WatchSummarySync.publish(
+            from: modelContext,
+            attendanceAlert: WatchAttendanceAlert(
+                message: "\(child.name) signed out",
+                date: Date(),
+                kind: "signOut"
+            )
+        )
     }
 
     private func isSignInDisabled(_ status: AttendanceStatus) -> Bool {
@@ -333,7 +349,8 @@ struct AttendanceRegisterView: View {
         droppedOffByName: String,
         droppedOffByRelationship: String,
         staffName: String,
-        notes: String
+        notes: String,
+        saveToAuthorisedList: Bool
     ) {
         let today = AttendanceRegisterViewModel.startOfDay(for: Date())
 
@@ -359,8 +376,32 @@ struct AttendanceRegisterView: View {
             modelContext.insert(record)
         }
 
+        if saveToAuthorisedList {
+            let alreadyListed = authorisedCollectors.contains {
+                $0.childName == child.name
+                    && $0.name == droppedOffByName
+                    && $0.relationship == droppedOffByRelationship
+            }
+            if !alreadyListed {
+                modelContext.insert(
+                    AuthorisedCollector(
+                        childName: child.name,
+                        name: droppedOffByName,
+                        relationship: droppedOffByRelationship
+                    )
+                )
+            }
+        }
+
         try? modelContext.save()
-        WatchSummarySync.publish(from: modelContext)
+        WatchSummarySync.publish(
+            from: modelContext,
+            attendanceAlert: WatchAttendanceAlert(
+                message: "\(child.name) signed in",
+                date: Date(),
+                kind: "signIn"
+            )
+        )
         sheetRoute = nil
     }
 
@@ -382,7 +423,14 @@ struct AttendanceRegisterView: View {
         existing.notes = notes
 
         try? modelContext.save()
-        WatchSummarySync.publish(from: modelContext)
+        WatchSummarySync.publish(
+            from: modelContext,
+            attendanceAlert: WatchAttendanceAlert(
+                message: "\(child.name) signed out",
+                date: Date(),
+                kind: "signOut"
+            )
+        )
         sheetRoute = nil
     }
 }

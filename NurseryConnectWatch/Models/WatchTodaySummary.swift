@@ -1,12 +1,19 @@
 import Foundation
 
-/// JSON payload shared between the iOS app and watchOS companion via App Groups.
+struct WatchAttendanceAlert: Codable, Equatable {
+    var message: String
+    var date: Date
+    var kind: String
+}
+
 struct WatchTodaySummary: Codable {
     var updatedAt: Date
     var childrenCount: Int
+    var studentsInNurseryToday: Int
     var diaryEntriesToday: Int
     var incidentsToday: Int
     var recentIncidents: [WatchRecentIncident]
+    var attendanceAlert: WatchAttendanceAlert?
 }
 
 struct WatchRecentIncident: Codable, Identifiable {

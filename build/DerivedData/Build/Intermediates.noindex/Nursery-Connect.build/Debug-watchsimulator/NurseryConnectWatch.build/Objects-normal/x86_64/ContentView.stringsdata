@@ -1,0 +1,72 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/NurseryConnectWatch/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Today",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sign in",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sign out",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Updated %@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@: %@",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 141
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recent incidents",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 95
+        }
+      },
+      {
+        "comment": "",
+        "key": "No summary yet",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Nursery Connect on iPhone or iPad to sync today's glance.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 151
+        }
+      }
+    ]
+  },
+  "version": 1
+}

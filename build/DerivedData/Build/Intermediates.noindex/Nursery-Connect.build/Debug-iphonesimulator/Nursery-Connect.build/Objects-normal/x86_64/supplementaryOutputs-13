@@ -1,0 +1,30 @@
+{
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AddDiaryView.swift" : {
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddDiaryView.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddDiaryView.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddDiaryView.dia",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddDiaryView.o",
+    "swift-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddDiaryView.swiftdeps"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AddIncidentView.swift" : {
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddIncidentView.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddIncidentView.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddIncidentView.dia",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddIncidentView.o",
+    "swift-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AddIncidentView.swiftdeps"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AnalyticsView.swift" : {
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsView.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsView.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsView.dia",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsView.o",
+    "swift-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AnalyticsView.swiftdeps"
+  },
+  "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AttendanceCheckInSheet.swift" : {
+    "const-values" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceCheckInSheet.swiftconstvalues",
+    "dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceCheckInSheet.d",
+    "diagnostics" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceCheckInSheet.dia",
+    "object" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceCheckInSheet.o",
+    "swift-dependencies" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/Nursery-Connect.build/Debug-iphonesimulator/Nursery-Connect.build/Objects-normal/x86_64/AttendanceCheckInSheet.swiftdeps"
+  }
+}

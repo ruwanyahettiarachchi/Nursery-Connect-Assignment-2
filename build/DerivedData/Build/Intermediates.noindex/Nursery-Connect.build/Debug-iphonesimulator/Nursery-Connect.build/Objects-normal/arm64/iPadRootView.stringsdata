@@ -1,0 +1,56 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/iPadRootView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Little Stars Nursery",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "Register",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Detail section",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select a child",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choose a child from the sidebar to view their profile, diary logs, and analytics. Use Register for daily attendance.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open attendance register",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 84
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,67 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "4bac78fa1ebb01b81edf464336b1d4170f865ab777d1c71a3d4bdcdd0344e15f"
+    },
+    {
+      "guid" : "4bac78fa1ebb01b81edf464336b1d41717639c2e0783c5dcc0b1b6f8e69494f0"
+    }
+  ],
+  "containerPath" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "undefined_arch",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator26.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "i386",
+        "x86_64"
+      ],
+      "targetArchitecture" : "undefined_arch"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Products",
+      "derivedDataPath" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "CLANG_COVERAGE_MAPPING" : "YES",
+          "CLANG_PROFILE_DATA_DIRECTORY" : "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/build/DerivedData/Build/ProfileData",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

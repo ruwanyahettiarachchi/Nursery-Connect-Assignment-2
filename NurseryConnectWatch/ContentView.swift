@@ -1,14 +1,20 @@
 import SwiftUI
+import WatchKit
 
 struct ContentView: View {
     @Environment(\.scenePhase) private var scenePhase
     @State private var summary: WatchTodaySummary?
+    @AppStorage("lastSeenAttendanceAlertTime") private var lastSeenAttendanceAlertTime: Double = 0
+    @State private var showAttendanceBanner = false
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
                     if let summary {
+                        if showAttendanceBanner, let alert = summary.attendanceAlert {
+                            attendanceBanner(alert)
+                        }
                         summarySection(summary)
                         if !summary.recentIncidents.isEmpty {
                             recentIncidentsSection(summary.recentIncidents)
@@ -29,13 +35,39 @@ struct ContentView: View {
         }
     }
 
+    private func attendanceBanner(_ alert: WatchAttendanceAlert) -> some View {
+        HStack(spacing: 8) {
+            Image(systemName: alert.kind == "signIn" ? "arrow.down.circle.fill" : "arrow.up.circle.fill")
+                .foregroundStyle(alert.kind == "signIn" ? WatchTheme.accent : WatchTheme.diaryTint)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(alert.kind == "signIn" ? "Sign in" : "Sign out")
+                    .font(.caption2.weight(.semibold))
+                    .foregroundStyle(.secondary)
+                Text(alert.message)
+                    .font(.footnote.weight(.semibold))
+                    .lineLimit(2)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(10)
+        .background(RoundedRectangle(cornerRadius: 12).fill(WatchTheme.accent.opacity(0.2)))
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(alert.message)
+    }
+
     private func summarySection(_ summary: WatchTodaySummary) -> some View {
         VStack(spacing: 8) {
             statCard(
-                value: "\(summary.childrenCount)",
-                label: "Children",
-                systemImage: "person.3.fill",
+                value: "\(summary.studentsInNurseryToday)",
+                label: "In nursery now",
+                systemImage: "figure.2.and.child.holdinghands",
                 tint: WatchTheme.accent
+            )
+            statCard(
+                value: "\(summary.childrenCount)",
+                label: "On roll",
+                systemImage: "person.3.fill",
+                tint: WatchTheme.accent.opacity(0.85)
             )
             statCard(
                 value: "\(summary.diaryEntriesToday)",
@@ -125,7 +157,22 @@ struct ContentView: View {
     }
 
     private func reload() {
-        summary = WatchSummaryStore.load()
+        let loaded = WatchSummaryStore.load()
+        summary = loaded
+
+        guard let alert = loaded?.attendanceAlert else {
+            showAttendanceBanner = false
+            return
+        }
+
+        let alertTime = alert.date.timeIntervalSince1970
+        let isNew = alertTime > lastSeenAttendanceAlertTime
+        showAttendanceBanner = Calendar.current.isDateInToday(alert.date)
+
+        if isNew && showAttendanceBanner {
+            lastSeenAttendanceAlertTime = alertTime
+            WKInterfaceDevice.current().play(.notification)
+        }
     }
 }
 

@@ -1,0 +1,64 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AttendanceRegisterView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Attendance Register",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unknown collector",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily register",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "No children to register",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 265
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add children to the dashboard before taking attendance.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 267
+        }
+      }
+    ]
+  },
+  "version": 1
+}

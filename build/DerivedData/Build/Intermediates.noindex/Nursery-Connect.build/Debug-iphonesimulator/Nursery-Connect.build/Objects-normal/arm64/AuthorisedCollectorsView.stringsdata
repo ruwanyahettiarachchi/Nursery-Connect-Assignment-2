@@ -1,0 +1,88 @@
+{
+  "source": "/Users/shehansalitha/Desktop/Ruwanya Xcode/Nursery-Connect-Assignment-2/Nursery-Connect/Views/AuthorisedCollectorsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Collectors",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add collector",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Authorised collectors",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Relationship",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Photo ID reference (optional)",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "No collectors yet",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add authorised adults for pick-up. Keyworkers will be alerted if an unknown collector is used at check-out.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "ID: %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 55
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'Nursery-Connect' in project 'Nursery-Connect'
+➜ Explicit dependency on target 'NurseryConnectWatch' in project 'Nursery-Connect'
+Target 'NurseryConnectWatch' in project 'Nursery-Connect' (no dependencies)
