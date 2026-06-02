@@ -48,7 +48,20 @@ class WatchSessionManager: NSObject, WCSessionDelegate, ObservableObject {
     }
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        guard let data = applicationContext["summaryData"] as? Data else { return }
+        handleReceivedMessage(applicationContext)
+    }
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        handleReceivedMessage(message)
+    }
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        handleReceivedMessage(message)
+        replyHandler([:])
+    }
+
+    private func handleReceivedMessage(_ message: [String : Any]) {
+        guard let data = message["summaryData"] as? Data else { return }
         
         do {
             let decoded = try JSONDecoder().decode(WatchTodaySummary.self, from: data)
@@ -61,7 +74,7 @@ class WatchSessionManager: NSObject, WCSessionDelegate, ObservableObject {
             }
         } catch {
             #if DEBUG
-            print("watchOS failed to decode summary: \(error.localizedDescription)")
+            print("watchOS failed to decode summary message: \(error.localizedDescription)")
             #endif
         }
     }

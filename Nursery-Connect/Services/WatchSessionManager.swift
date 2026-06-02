@@ -32,8 +32,17 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
             let context = ["summaryData": data]
             
             if session.activationState == .activated {
+                // 1. Send via Application Context for offline relaunch storage consistency
                 try session.updateApplicationContext(context)
                 logger.info("Successfully updated watch application context.")
+                
+                // 2. If watch is running in foreground, send via sendMessage for instant sync
+                if session.isReachable {
+                    session.sendMessage(context, replyHandler: nil) { error in
+                        self.logger.warning("Live sendMessage failed: \(error.localizedDescription)")
+                    }
+                    logger.info("Sent real-time message to watch.")
+                }
             } else {
                 logger.warning("WCSession not activated yet. State: \(self.session.activationState.rawValue). Cannot send context.")
             }

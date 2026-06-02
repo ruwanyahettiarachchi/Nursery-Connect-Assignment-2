@@ -59,12 +59,12 @@ struct AnalyticsViewModel {
     }
 
     var hasAttendanceData: Bool {
-        !weekAttendanceRecords.isEmpty
+        !filteredAttendance.isEmpty
     }
 
     var moodCounts: [MoodCount] {
-        let weekLogs = filteredDiaryLogs.filter { isInCurrentWeek($0.date) }
-        let grouped = Dictionary(grouping: weekLogs, by: \.mood)
+        let recentLogs = filteredDiaryLogs.filter { isInLast14Days($0.date) }
+        let grouped = Dictionary(grouping: recentLogs, by: \.mood)
         return grouped
             .map { MoodCount(mood: $0.key, count: $0.value.count) }
             .sorted { $0.mood < $1.mood }
@@ -72,7 +72,7 @@ struct AnalyticsViewModel {
 
     var napTrend: [NapDataPoint] {
         filteredDiaryLogs
-            .filter { isInCurrentWeek($0.date) }
+            .filter { isInLast14Days($0.date) }
             .sorted { $0.date < $1.date }
             .map { NapDataPoint(date: $0.date, minutes: $0.napDurationMinutes) }
     }
@@ -84,18 +84,14 @@ struct AnalyticsViewModel {
             .sorted { $0.count > $1.count }
     }
 
-    /// Children present per weekday (or 0/1 per day when filtered to one child).
+    /// Children present per weekday for the last 7 calendar days.
     var weeklyAttendance: [WeeklyAttendancePoint] {
         let calendar = Calendar.current
-        guard let weekInterval = calendar.dateInterval(of: .weekOfYear, for: Date()) else {
-            return []
-        }
-
         var points: [WeeklyAttendancePoint] = []
-        var day = weekInterval.start
 
-        while day < weekInterval.end {
-            let dayRecords = weekAttendanceRecords.filter {
+        for dayOffset in -6...0 {
+            guard let day = calendar.date(byAdding: .day, value: dayOffset, to: Date()) else { continue }
+            let dayRecords = filteredAttendance.filter {
                 calendar.isDate($0.date, inSameDayAs: day)
             }
 
@@ -116,31 +112,26 @@ struct AnalyticsViewModel {
                     presentCount: count
                 )
             )
-            day = calendar.date(byAdding: .day, value: 1, to: day) ?? day
         }
 
         return points
     }
 
-    /// Days present this week per child (nursery-wide view only).
+    /// Days present in the last 14 days per child (nursery-wide view only).
     var childAttendanceFrequency: [ChildAttendanceFrequency] {
         guard childFilter == nil else { return [] }
 
-        let presentRecords = weekAttendanceRecords.filter(\.isPresent)
+        let presentRecords = filteredAttendance.filter { isInLast14Days($0.date) && $0.isPresent }
         let grouped = Dictionary(grouping: presentRecords, by: \.childName)
 
         return grouped
             .map { name, records in
                 let uniqueDays = Set(
-                    records.map { Calendar.current.startOfDay(for: $0.date) }
+                    records.map { calendar in Calendar.current.startOfDay(for: calendar.date) }
                 )
                 return ChildAttendanceFrequency(childName: name, daysPresent: uniqueDays.count)
             }
             .sorted { $0.daysPresent > $1.daysPresent }
-    }
-
-    private var weekAttendanceRecords: [AttendanceRecord] {
-        filteredAttendance.filter { isInCurrentWeek($0.date) }
     }
 
     private var filteredDiaryLogs: [DiaryLog] {
@@ -158,7 +149,10 @@ struct AnalyticsViewModel {
         return attendanceRecords.filter { $0.childName == childFilter }
     }
 
-    private func isInCurrentWeek(_ date: Date) -> Bool {
-        Calendar.current.isDate(date, equalTo: Date(), toGranularity: .weekOfYear)
+    private func isInLast14Days(_ date: Date) -> Bool {
+        let calendar = Calendar.current
+        guard let fourteenDaysAgo = calendar.date(byAdding: .day, value: -14, to: Date()) else { return false }
+        let startOfFourteenDaysAgo = calendar.startOfDay(for: fourteenDaysAgo)
+        return date >= startOfFourteenDaysAgo && date <= Date()
     }
 }
