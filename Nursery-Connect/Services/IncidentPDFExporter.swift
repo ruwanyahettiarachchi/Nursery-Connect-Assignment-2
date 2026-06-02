@@ -4,10 +4,7 @@ import UIKit
 
 enum IncidentPDFExporter {
     static func export(incident: Incident) -> URL? {
-        let pdf = PDFDocument()
-
-        guard let page = makePage(for: incident) else { return nil }
-        pdf.insert(page, at: 0)
+        guard let data = makePDFData(for: incident) else { return nil }
 
         let safeName = incident.childName
             .replacingOccurrences(of: " ", with: "_")
@@ -16,11 +13,15 @@ enum IncidentPDFExporter {
         let fileName = "Incident_\(safeName)_\(incident.date.formatted(.dateTime.year().month().day())).pdf"
         let url = FileManager.default.temporaryDirectory.appendingPathComponent(fileName)
         
-        guard pdf.write(to: url) else { return nil }
-        return url
+        do {
+            try data.write(to: url)
+            return url
+        } catch {
+            return nil
+        }
     }
 
-    private static func makePage(for incident: Incident) -> PDFPage? {
+    private static func makePDFData(for incident: Incident) -> Data? {
         let pageBounds = CGRect(x: 0, y: 0, width: 612, height: 792) // US Letter size
         let renderer = UIGraphicsPDFRenderer(bounds: pageBounds)
 
@@ -204,8 +205,6 @@ enum IncidentPDFExporter {
             drawString(footerText, font: footerFont, color: footerColor, alignment: .center)
         }
 
-        // Return a single image page for standard rendering
-        guard let image = UIImage(data: data) else { return nil }
-        return PDFPage(image: image)
+        return data
     }
 }

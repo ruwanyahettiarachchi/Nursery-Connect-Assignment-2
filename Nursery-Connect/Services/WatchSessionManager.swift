@@ -49,6 +49,12 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
             logger.error("WCSession activation failed with error: \(error.localizedDescription)")
         } else {
             logger.info("WCSession activation completed on iOS. State: \(activationState.rawValue)")
+            if activationState == .activated {
+                // If a summary was already saved during startup, send it now that the session is active
+                if let saved = WatchSummaryStore.load() {
+                    sendSummary(saved)
+                }
+            }
         }
     }
     

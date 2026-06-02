@@ -11,6 +11,7 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         Group {
@@ -24,6 +25,11 @@ struct ContentView: View {
         .task {
             WatchSessionManager.shared.activate()
             WatchSummarySync.publish(from: modelContext)
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active {
+                WatchSummarySync.publish(from: modelContext)
+            }
         }
     }
 }

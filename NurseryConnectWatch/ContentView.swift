@@ -3,6 +3,7 @@ import WatchKit
 
 struct ContentView: View {
     @Environment(\.scenePhase) private var scenePhase
+    @ObservedObject private var sessionManager = WatchSessionManager.shared
     @State private var summary: WatchTodaySummary?
     @AppStorage("lastSeenAttendanceAlertTime") private var lastSeenAttendanceAlertTime: Double = 0
     @State private var showAttendanceBanner = false
@@ -32,6 +33,9 @@ struct ContentView: View {
             if phase == .active {
                 reload()
             }
+        }
+        .onReceive(sessionManager.$summary) { _ in
+            reload()
         }
     }
 

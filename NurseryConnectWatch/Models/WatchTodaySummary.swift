@@ -24,20 +24,21 @@ struct WatchRecentIncident: Codable, Identifiable {
 }
 
 enum WatchSummaryStore {
-    static let appGroupID = "group.com.ruwanya.Nursery-Connect"
     static let fileName = "todaySummary.json"
 
-    static var containerURL: URL? {
-        FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroupID)
-    }
-
-    static var fileURL: URL? {
-        containerURL?.appendingPathComponent(fileName)
+    static var fileURL: URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0].appendingPathComponent(fileName)
     }
 
     static func load() -> WatchTodaySummary? {
-        guard let fileURL else { return nil }
         guard let data = try? Data(contentsOf: fileURL) else { return nil }
         return try? JSONDecoder().decode(WatchTodaySummary.self, from: data)
     }
+
+    static func save(_ summary: WatchTodaySummary) {
+        guard let data = try? JSONEncoder().encode(summary) else { return }
+        try? data.write(to: fileURL, options: .atomic)
+    }
 }
+
