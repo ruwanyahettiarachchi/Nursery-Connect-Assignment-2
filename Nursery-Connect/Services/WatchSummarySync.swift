@@ -51,5 +51,7 @@ enum WatchSummarySync {
         )
 
         WatchSummaryStore.save(summary)
+        WatchSessionManager.shared.sendSummary(summary)
     }
 }
+

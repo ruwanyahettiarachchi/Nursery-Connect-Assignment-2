@@ -8,6 +8,19 @@ struct IncidentDetailView: View {
 
     @State private var exportURL: URL?
     @State private var showExportSheet = false
+    @State private var signingRoute: SigningRoute?
+
+    enum SigningRoute: Identifiable {
+        case manager
+        case parent
+
+        var id: String {
+            switch self {
+            case .manager: return "manager"
+            case .parent: return "parent"
+            }
+        }
+    }
 
     var body: some View {
         ScrollView {
@@ -40,6 +53,14 @@ struct IncidentDetailView: View {
                 }
                 .presentationDetents([.medium])
                 .padding()
+            }
+        }
+        .sheet(item: $signingRoute) { route in
+            switch route {
+            case .manager:
+                ManagerSigningSheet(incident: incident)
+            case .parent:
+                ParentSigningSheet(incident: incident)
             }
         }
     }
@@ -102,39 +123,108 @@ struct IncidentDetailView: View {
     }
 
     private var workflowCard: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Workflow")
+        VStack(alignment: .leading, spacing: 16) {
+            Text("Safeguarding & Workflow Sign-off")
                 .font(.headline)
+                .foregroundStyle(NurseryTheme.accent)
 
-            workflowRow(
-                title: "Manager countersignature",
-                status: incident.isManagerSigned ? "Signed" : "Pending"
-            )
+            // Manager Countersignature Row
+            VStack(alignment: .leading, spacing: 8) {
+                HStack {
+                    Label("Manager Countersignature", systemImage: "signature")
+                        .font(.subheadline.weight(.semibold))
+                    Spacer()
+                    Text(incident.isManagerSigned ? "Signed" : "Required")
+                        .font(.caption.weight(.bold))
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(Capsule().fill(incident.isManagerSigned ? NurseryTheme.mint.opacity(0.15) : NurseryTheme.incidentTint.opacity(0.15)))
+                        .foregroundStyle(incident.isManagerSigned ? NurseryTheme.mint : NurseryTheme.incidentTint)
+                }
+
+                if let signDate = incident.managerSignedAt {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Countersigned by \(incident.managerSignedByName) on \(signDate.formatted(date: .abbreviated, time: .shortened))")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                        
+                        if let signData = incident.managerSignatureData, let uiImage = UIImage(data: signData) {
+                            Image(uiImage: uiImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 50)
+                                .padding(6)
+                                .background(RoundedRectangle(cornerRadius: 8).fill(Color.secondary.opacity(0.1)))
+                        }
+                    }
+                } else {
+                    Button {
+                        signingRoute = .manager
+                    } label: {
+                        Label("Manager Countersign", systemImage: "pencil.and.outline")
+                            .font(.caption.weight(.semibold))
+                            .padding(.vertical, 8)
+                            .frame(maxWidth: .infinity)
+                            .background(RoundedRectangle(cornerRadius: 10).fill(NurseryTheme.accent.opacity(0.15)))
+                            .foregroundStyle(NurseryTheme.accent)
+                    }
+                    .buttonStyle(NurseryTapAnimationStyle())
+                }
+            }
 
             Divider().opacity(0.35)
 
-            workflowRow(
-                title: "Parent acknowledgement",
-                status: incident.isParentAcknowledged ? "Acknowledged" : "Pending"
-            )
-            Text("This prototype records countersignature and acknowledgement as workflow states. Actions are handled in staff policy; here they’re displayed for traceability.")
+            // Parent Acknowledgment Row
+            VStack(alignment: .leading, spacing: 8) {
+                HStack {
+                    Label("Parent Acknowledgment", systemImage: "person.crop.circle.badge.checkmark")
+                        .font(.subheadline.weight(.semibold))
+                    Spacer()
+                    Text(incident.isParentAcknowledged ? "Acknowledged" : "Pending")
+                        .font(.caption.weight(.bold))
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(Capsule().fill(incident.isParentAcknowledged ? NurseryTheme.mint.opacity(0.15) : NurseryTheme.diaryTint.opacity(0.15)))
+                        .foregroundStyle(incident.isParentAcknowledged ? NurseryTheme.mint : NurseryTheme.diaryTint)
+                }
+
+                if let ackDate = incident.parentAcknowledgedAt {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Acknowledged on \(ackDate.formatted(date: .abbreviated, time: .shortened))")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                        
+                        if let signData = incident.parentSignatureData, let uiImage = UIImage(data: signData) {
+                            Image(uiImage: uiImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 50)
+                                .padding(6)
+                                .background(RoundedRectangle(cornerRadius: 8).fill(Color.secondary.opacity(0.1)))
+                        }
+                    }
+                } else {
+                    Button {
+                        signingRoute = .parent
+                    } label: {
+                        Label("Parent Acknowledge", systemImage: "pencil.and.outline")
+                            .font(.caption.weight(.semibold))
+                            .padding(.vertical, 8)
+                            .frame(maxWidth: .infinity)
+                            .background(RoundedRectangle(cornerRadius: 10).fill(NurseryTheme.diaryTint.opacity(0.15)))
+                            .foregroundStyle(NurseryTheme.diaryTint)
+                    }
+                    .buttonStyle(NurseryTapAnimationStyle())
+                }
+            }
+
+            Divider().opacity(0.35)
+
+            Text("Countersignatures and parent acknowledgments are legally required under EYFS safeguarding standards to ensure clear communication of material minor and major events.")
                 .font(.footnote)
                 .foregroundStyle(.secondary)
         }
         .nurseryCard()
-    }
-
-    private func workflowRow(title: String, status: String) -> some View {
-        HStack {
-            Text(title)
-                .font(.subheadline)
-            Spacer()
-            Text(status)
-                .font(.caption.weight(.semibold))
-                .padding(.horizontal, 10)
-                .padding(.vertical, 4)
-                .background(Capsule().fill(Color.secondary.opacity(0.14)))
-        }
     }
 }
 

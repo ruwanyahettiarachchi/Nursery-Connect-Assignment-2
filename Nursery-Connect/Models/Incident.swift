@@ -43,6 +43,9 @@ final class Incident {
     var immediateActionTaken: String
     /// Witnesses (FR24).
     var witnessesData: Data
+    
+    var managerSignatureData: Data?
+    var parentSignatureData: Data?
 
     /// Workflow: manager countersign required before finalisation (FR26).
     var managerCountersignRequired: Bool
@@ -68,6 +71,8 @@ final class Incident {
         managerSignedByName: String = "",
         managerSignedAt: Date? = nil,
         parentAcknowledgedAt: Date? = nil,
+        managerSignatureData: Data? = nil,
+        parentSignatureData: Data? = nil,
         createdAt: Date = Date()
     ) {
         self.childName = childName
@@ -84,6 +89,8 @@ final class Incident {
         self.managerSignedByName = managerSignedByName
         self.managerSignedAt = managerSignedAt
         self.parentAcknowledgedAt = parentAcknowledgedAt
+        self.managerSignatureData = managerSignatureData
+        self.parentSignatureData = parentSignatureData
         self.createdAt = createdAt
     }
 

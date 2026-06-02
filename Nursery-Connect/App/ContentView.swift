@@ -22,6 +22,7 @@ struct ContentView: View {
         }
         .tint(NurseryTheme.accent)
         .task {
+            WatchSessionManager.shared.activate()
             WatchSummarySync.publish(from: modelContext)
         }
     }
