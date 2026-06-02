@@ -8,7 +8,7 @@ enum AttendanceStatus: Equatable {
 
     var label: String {
         switch self {
-        case .notRecorded: return "Not arrived"
+        case .notRecorded: return "Not signed in"
         case .signedIn: return "Signed in"
         case .signedOut: return "Signed out"
         case .absent: return "Absent"

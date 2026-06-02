@@ -61,6 +61,6 @@ final class AttendanceRecord {
     }
 
     var isPresent: Bool {
-        !isAbsent && signInTime != nil
+        !isAbsent && signInTime != nil && signOutTime == nil
     }
 }

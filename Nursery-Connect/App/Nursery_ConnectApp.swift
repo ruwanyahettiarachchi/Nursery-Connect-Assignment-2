@@ -17,7 +17,7 @@ import Foundation
 @main
 struct Nursery_ConnectApp: App {
     /// Bump this when the persisted schema changes in a way that is not auto-migrated from older stores.
-    private static let storeSchemaVersion = 5
+    private static let storeSchemaVersion = 6
 
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([

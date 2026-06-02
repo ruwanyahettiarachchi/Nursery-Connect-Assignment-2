@@ -112,10 +112,6 @@ struct AttendanceCheckInSheet: View {
                 }
             }
 
-            Section("Checked in by staff") {
-                TextField("Staff name", text: $staffName)
-            }
-
             Section("Notes") {
                 TextField("Optional notes", text: $notes, axis: .vertical)
                     .lineLimit(2...4)
@@ -162,6 +158,6 @@ struct AttendanceCheckInSheet: View {
         } else {
             shouldSaveCollector = false
         }
-        onSave(name, relationship, staffName.trimmingCharacters(in: .whitespacesAndNewlines), notes.trimmingCharacters(in: .whitespacesAndNewlines), shouldSaveCollector)
+        onSave(name, relationship, "Keyworker", notes.trimmingCharacters(in: .whitespacesAndNewlines), shouldSaveCollector)
     }
 }

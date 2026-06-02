@@ -25,7 +25,7 @@ struct ContentView: View {
                         
                         // Viva Demo Section
                         VStack(alignment: .leading, spacing: 6) {
-                            Text("Viva Demo Helpers")
+                            Text("Attendance")
                                 .font(.caption2.weight(.bold))
                                 .foregroundStyle(.secondary)
                             

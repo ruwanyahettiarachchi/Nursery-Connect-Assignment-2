@@ -122,6 +122,11 @@ struct ChildListView: View {
             Child(name: "Oliver Smith", age: 4),
             Child(name: "Mia Johnson", age: 2),
             Child(name: "Noah Williams", age: 5),
+            Child(name: "Daniel Peter", age: 3),
+            Child(name: "Jenny Elizabeth", age: 4),
+            Child(name: "Chloe Isabella", age: 2),
+            Child(name: "Lucas Alexander", age: 5),
+            Child(name: "Sophia Grace", age: 3),
         ]
 
         for child in samples {
@@ -139,7 +144,7 @@ struct ChildListView: View {
         let calendar = Calendar.current
         let today = Date()
 
-        for dayOffset in -7...0 {
+        for dayOffset in -7 ... -1 {
             guard let date = calendar.date(byAdding: .day, value: dayOffset, to: today) else { continue }
             let dayOfWeek = calendar.component(.weekday, from: date)
             let isWeekend = dayOfWeek == 1 || dayOfWeek == 7
@@ -147,10 +152,10 @@ struct ChildListView: View {
             let dateStart = calendar.startOfDay(for: date)
 
             for child in children {
-                // Seed attendance records
+                // Past days only — today is left empty so keyworkers sign in manually.
                 if !isWeekend {
                     let isAbsent = (child.name == "Mia Johnson" && dayOffset == -2) || (child.name == "Oliver Smith" && dayOffset == -4)
-                    
+
                     let record = AttendanceRecord(
                         childName: child.name,
                         date: dateStart,
@@ -307,6 +312,11 @@ struct ChildListView: View {
             (1, "Helen Smith", "Mother"),
             (2, "Priya Johnson", "Mother"),
             (3, "David Williams", "Father"),
+            (4, "John Peter", "Father"),
+            (5, "Robert Elizabeth", "Father"),
+            (6, "Lily Isabella", "Mother"),
+            (7, "George Alexander", "Father"),
+            (8, "Anna Grace", "Mother"),
         ]
 
         for item in samples where item.childIndex < children.count {

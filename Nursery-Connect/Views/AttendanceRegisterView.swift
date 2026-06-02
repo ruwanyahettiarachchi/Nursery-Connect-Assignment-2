@@ -50,6 +50,9 @@ struct AttendanceRegisterView: View {
         .background(NurseryTheme.pageBackground.ignoresSafeArea(edges: [.horizontal, .bottom]))
         .navigationTitle("Attendance Register")
         .navigationBarTitleDisplayMode(.inline)
+        .task {
+            AttendanceSeedCleanup.removeSeededTodayRecordsIfNeeded(in: modelContext)
+        }
         .sheet(item: $sheetRoute) { route in
             switch route {
             case .checkIn(let child):
