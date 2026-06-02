@@ -37,6 +37,9 @@ struct ChildDetailView: View {
 
     @State private var incidentPendingDelete: Incident?
     @State private var showDeleteIncidentConfirmation = false
+    @State private var showCollectors = false
+
+    @State private var showMoodCheckIns = false
 
     init(child: Child) {
         self.child = child
@@ -63,8 +66,11 @@ struct ChildDetailView: View {
                 headerCard
 
                 diarySectionCard
+                moodCheckInsCard
 
                 incidentSectionCard
+
+                authorisedCollectorsCard
             }
             .padding(.horizontal, NurseryTheme.horizontalPadding(for: horizontalSizeClass))
             .padding(.vertical, 16)
@@ -129,6 +135,18 @@ struct ChildDetailView: View {
             }
         } message: {
             Text("This will permanently remove this incident from the device.")
+        }
+        .sheet(isPresented: $showCollectors) {
+            NavigationStack {
+                AuthorisedCollectorsView(child: child)
+                    .tint(NurseryTheme.accent)
+            }
+        }
+        .sheet(isPresented: $showMoodCheckIns) {
+            NavigationStack {
+                MoodCheckInsView(child: child)
+                    .tint(NurseryTheme.accent)
+            }
         }
     }
 
@@ -216,6 +234,35 @@ struct ChildDetailView: View {
         .nurseryCard()
     }
 
+    private var moodCheckInsCard: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            sectionHeader(
+                title: "Mood Check-ins",
+                systemImage: "face.smiling.fill",
+                tint: NurseryTheme.accent
+            )
+
+            Text("Record wellbeing at arrival, midday, and departure.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            Button {
+                showMoodCheckIns = true
+            } label: {
+                Label("Open mood check-ins", systemImage: "heart.text.square.fill")
+                    .font(.subheadline.weight(.semibold))
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 12)
+                    .background(
+                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                            .fill(NurseryTheme.accent.opacity(0.16))
+                    )
+            }
+            .buttonStyle(NurseryTapAnimationStyle())
+        }
+        .nurseryCard()
+    }
+
     private var incidentSectionCard: some View {
         VStack(alignment: .leading, spacing: 14) {
             sectionHeader(
@@ -261,6 +308,35 @@ struct ChildDetailView: View {
             .contentShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
             .accessibilityIdentifier("detail.addIncident")
             .keyboardShortcut("i", modifiers: .command)
+        }
+        .nurseryCard()
+    }
+
+    private var authorisedCollectorsCard: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            sectionHeader(
+                title: "Authorised Collectors",
+                systemImage: "person.2.badge.key",
+                tint: NurseryTheme.accent
+            )
+
+            Text("Parents manage the authorised collectors list. Keyworkers are alerted if a check-out uses an unknown collector.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            Button {
+                showCollectors = true
+            } label: {
+                Label("Manage collectors", systemImage: "person.crop.circle.badge.plus")
+                    .font(.subheadline.weight(.semibold))
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 12)
+                    .background(
+                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                            .fill(NurseryTheme.accent.opacity(0.16))
+                    )
+            }
+            .buttonStyle(NurseryTapAnimationStyle())
         }
         .nurseryCard()
     }
@@ -344,23 +420,25 @@ struct ChildDetailView: View {
                 .opacity(0.35)
 
             HStack(spacing: 12) {
-                Label {
-                    Text("\(log.napStart, style: .time) – \(log.napEnd, style: .time)")
-                } icon: {
-                    Image(systemName: "moon.zzz.fill")
-                }
-                .font(.caption)
-                .foregroundStyle(.secondary)
-
-                Text("(\(log.napDurationMinutes) min)")
+                if log.napRecorded {
+                    Label {
+                        Text("\(log.napStart, style: .time) – \(log.napEnd, style: .time)")
+                    } icon: {
+                        Image(systemName: "moon.zzz.fill")
+                    }
                     .font(.caption)
                     .foregroundStyle(.secondary)
+
+                    Text("(\(log.napDurationMinutes) min)")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
 
                 Spacer(minLength: 0)
 
                 if log.nappyRecorded {
                     Label(
-                        log.nappyChanged ? "Nappy changed" : "No change",
+                        log.nappyChanged ? "Change recorded" : "No change",
                         systemImage: log.nappyChanged ? "checkmark.circle.fill" : "circle"
                     )
                     .font(.caption)
@@ -384,68 +462,99 @@ struct ChildDetailView: View {
     }
 
     private func incidentRow(_ incident: Incident) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack(alignment: .firstTextBaseline, spacing: 10) {
-                Image(systemName: "bandage.fill")
-                    .font(.title3)
-                    .foregroundStyle(NurseryTheme.incidentTint)
+        NavigationLink {
+            IncidentDetailView(incident: incident)
+        } label: {
+            VStack(alignment: .leading, spacing: 10) {
+                HStack(alignment: .firstTextBaseline, spacing: 10) {
+                    Image(systemName: "bandage.fill")
+                        .font(.title3)
+                        .foregroundStyle(NurseryTheme.incidentTint)
 
-                VStack(alignment: .leading, spacing: 6) {
-                    HStack {
-                        Text(incident.bodyPart)
-                            .font(.subheadline.weight(.semibold))
-                            .padding(.horizontal, 10)
-                            .padding(.vertical, 4)
-                            .background(
-                                Capsule()
-                                    .fill(NurseryTheme.incidentTint.opacity(0.22))
-                            )
-                            .foregroundStyle(.primary)
+                    VStack(alignment: .leading, spacing: 6) {
+                        HStack {
+                            Text(incident.bodyPart)
+                                .font(.subheadline.weight(.semibold))
+                                .padding(.horizontal, 10)
+                                .padding(.vertical, 4)
+                                .background(
+                                    Capsule()
+                                        .fill(NurseryTheme.incidentTint.opacity(0.22))
+                                )
+                                .foregroundStyle(.primary)
 
-                        Spacer(minLength: 0)
+                            Text(incident.category)
+                                .font(.caption.weight(.semibold))
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 4)
+                                .background(Capsule().fill(NurseryTheme.accent.opacity(0.14)))
+                                .foregroundStyle(NurseryTheme.accent)
 
-                        Label {
-                            HStack(spacing: 4) {
-                                Text(incident.date, style: .date)
-                                Text("·")
-                                    .foregroundStyle(.tertiary)
-                                Text(incident.date, style: .time)
+                            Spacer(minLength: 0)
+
+                            Label {
+                                HStack(spacing: 4) {
+                                    Text(incident.date, style: .date)
+                                    Text("·")
+                                        .foregroundStyle(.tertiary)
+                                    Text(incident.date, style: .time)
+                                }
+                            } icon: {
+                                Image(systemName: "clock.fill")
                             }
-                        } icon: {
-                            Image(systemName: "clock.fill")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+
+                            Menu {
+                                Button("Edit", systemImage: "pencil") {
+                                    sheetRoute = .editIncident(incident)
+                                }
+                                Button("Delete", systemImage: "trash", role: .destructive) {
+                                    incidentPendingDelete = incident
+                                    showDeleteIncidentConfirmation = true
+                                }
+                            } label: {
+                                Image(systemName: "ellipsis.circle")
+                                    .font(.title3)
+                                    .foregroundStyle(NurseryTheme.incidentTint.opacity(0.9))
+                                    .frame(width: 36, height: 36)
+                                    .contentShape(Rectangle())
+                            }
                         }
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
 
-                        Menu {
-                            Button("Edit", systemImage: "pencil") {
-                                sheetRoute = .editIncident(incident)
-                            }
-                            Button("Delete", systemImage: "trash", role: .destructive) {
-                                incidentPendingDelete = incident
-                                showDeleteIncidentConfirmation = true
-                            }
-                        } label: {
-                            Image(systemName: "ellipsis.circle")
-                                .font(.title3)
-                                .foregroundStyle(NurseryTheme.incidentTint.opacity(0.9))
-                                .frame(width: 36, height: 36)
-                                .contentShape(Rectangle())
+                        Text(incident.descriptionText)
+                            .font(.body)
+                            .foregroundStyle(.primary)
+                            .fixedSize(horizontal: false, vertical: true)
+
+                        HStack(spacing: 8) {
+                            workflowPill(
+                                title: incident.isManagerSigned ? "Manager signed" : "Awaiting manager",
+                                tint: incident.isManagerSigned ? NurseryTheme.mint : NurseryTheme.incidentTint
+                            )
+                            workflowPill(
+                                title: incident.isParentAcknowledged ? "Parent acknowledged" : "Ack pending",
+                                tint: incident.isParentAcknowledged ? NurseryTheme.mint : NurseryTheme.accent
+                            )
                         }
                     }
-
-                    Text(incident.descriptionText)
-                        .font(.body)
-                        .foregroundStyle(.primary)
-                        .fixedSize(horizontal: false, vertical: true)
                 }
             }
+            .padding(14)
+            .background(
+                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                    .fill(Color.white.opacity(0.65))
+            )
         }
-        .padding(14)
-        .background(
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .fill(Color.white.opacity(0.65))
-        )
+    }
+
+    private func workflowPill(title: String, tint: Color) -> some View {
+        Text(title)
+            .font(.caption2.weight(.semibold))
+            .padding(.horizontal, 10)
+            .padding(.vertical, 4)
+            .background(Capsule().fill(tint.opacity(0.16)))
+            .foregroundStyle(tint)
     }
 
     private func moodSymbol(for mood: String) -> String {
